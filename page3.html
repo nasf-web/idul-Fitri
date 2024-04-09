@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <audio controls autoplay loop>
+      <source src="music2.mp3" type="audio/mpeg">
+  </audio>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <title>THR UNTUK SAUMIW</title>
+</head>
+<body>
+    <h1 class="h1">NIH THR DARI AKU!💰💸🤑</h1>
+    <div>
+       <img src="thr.jpg"  alt="thr by nastakh" class="thr">
+    </div>
+  
+    <div class="box">
+        <h2 id="head">Seneng kn dpt thr dri acu?</h2>
+        <button id="yes" onclick="fn()">iy,mksi.</button>
+        <button id="no" onclick="fx()">bisik lu</button>
+    </div>
+</body>
+  
+<script>
+    const yesbtn = document.getElementById("yes");
+    const heading = document.getElementById("head");
+
+    function fn(){
+        heading.innerHTML ="WKWK SAMA-SAMA SUMIEE";
+    }
+
+    function fx(){
+        const btn = document.getElementById('no');
+        const x = Math.floor(Math.random() * 50) + 1; // Adjusted the random range to keep the button within the container
+        const y = Math.floor(Math.random() * 100) + 1; // Adjusted the random range to keep the button within the container
+        btn.style.top = x + "px";
+        btn.style.left = y + "px";
+    }
+</script>
+</html>
